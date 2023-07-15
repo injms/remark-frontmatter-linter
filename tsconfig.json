@@ -10,7 +10,7 @@
 		"noImplicitAny": true,
 		"baseUrl": ".",
 		"paths": {},
-		"allowSyntheticDefaultImports": true,
+		"allowSyntheticDefaultImports": false,
 		"strictNullChecks": true,
 		"declaration": true,
 		"outDir": "./dist"
