@@ -1,19 +1,22 @@
 {
 	"compilerOptions": {
-		"target": "ESNext",
+		"allowJs": false,
+		"allowSyntheticDefaultImports": false,
+		"baseUrl": ".",
+		"declaration": true,
+		"isolatedModules": true,
 		"module": "ESNext",
 		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"types": ["node", "unist", "unified"],
-		"allowJs": true,
 		"noImplicitAny": true,
-		"baseUrl": ".",
+		"outDir": "./dist",
 		"paths": {},
-		"allowSyntheticDefaultImports": true,
+		"rootDir": "./src",
+		"sourceMap": false,
+		"strict": true,
+		"resolveJsonModule": true,
 		"strictNullChecks": true,
-		"declaration": true,
-		"outDir": "./dist"
+		"target": "ESNext",
+		"types": ["node", "unist", "unified"]
 	},
 
 	"include": ["./src/index.ts"]
