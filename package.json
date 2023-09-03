@@ -32,7 +32,7 @@
   "homepage": "https://github.com/injms/remark-frontmatter-linter#readme",
   "devDependencies": {
     "@ava/typescript": "^4.0.0",
-    "@rollup/plugin-typescript": "^11.1.2",
+    "@rollup/plugin-typescript": "^11.1.3",
     "@types/eslint": "^8.40.2",
     "@types/mdast": "^3.0.11",
     "@types/node": "^20.3.1",
