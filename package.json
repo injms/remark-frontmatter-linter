@@ -47,7 +47,7 @@
     "unified-lint-rule": "^2.1.2"
   },
   "dependencies": {
-    "eslint-plugin-yml": "^1.8.0",
+    "eslint-plugin-yml": "^1.11.0",
     "unist-util-is": "^5.2.1"
   },
   "ava": {
