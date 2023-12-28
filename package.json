@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "eslint-plugin-yml": "^1.11.0",
-    "unist-util-is": "^5.2.1"
+    "unist-util-is": "^6.0.0"
   },
   "ava": {
     "extensions": [
