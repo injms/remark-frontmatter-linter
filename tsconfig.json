@@ -5,7 +5,7 @@
 		"baseUrl": ".",
 		"declaration": true,
 		"isolatedModules": true,
-		"module": "ESNext",
+		"module": "esnext",
 		"moduleResolution": "node",
 		"noImplicitAny": true,
 		"outDir": "./dist",
@@ -15,7 +15,7 @@
 		"strict": true,
 		"resolveJsonModule": true,
 		"strictNullChecks": true,
-		"target": "ESNext",
+		"target": "esnext",
 		"types": ["node", "unist", "unified"]
 	},
 
