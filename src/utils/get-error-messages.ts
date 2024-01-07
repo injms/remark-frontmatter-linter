@@ -1,12 +1,12 @@
 import type { ESLint, Linter } from 'eslint'
-import type { Point, Position } from 'unist'
+import type { Position } from 'unist'
 
 const NAME: string = 'frontmatter-linter'
 
-export type Msg = {
+export interface Msg {
   message: string,
-  position: Position,
   nameAndRule: string,
+  position: Position,
 }
 
 const getErrorMessages = (results: ESLint.LintResult[]): Msg[] => {
@@ -14,13 +14,17 @@ const getErrorMessages = (results: ESLint.LintResult[]): Msg[] => {
     return messages.map((message: Linter.LintMessage): Msg => {
       const ruleId: string = message.ruleId ?? 'unknown'
       const messageText: string = message.message ?? 'unknown'
+
+      // NOTE: because the markdown file has a frontmatter section, the line
+      // number is off by one. So we add one to the line number to make the
+      // position correct.
       const position: Position = {
         start: {
-          line: message.line ?? 1,
+          line: message.line + 1 ?? 1,
           column: message.column ?? 1,
         },
         end: {
-          line: message.endLine ?? 1,
+          line: (message.endLine ?? message.line) + 1 ?? 1,
           column: message.endColumn ?? 1,
         }
       }
