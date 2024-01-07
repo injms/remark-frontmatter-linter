@@ -10,7 +10,7 @@
     "build": "rollup --config rollup.config.js",
     "clean": "rm -r dist",
     "lint": "eslint",
-    "test": "ava",
+    "test": "NODE_OPTIONS='--import=tsx' ava",
     "watch": "rollup --config rollup.config.js --watch --watch.onBundleStart='npm run clean'"
   },
   "keywords": [
