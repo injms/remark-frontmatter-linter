@@ -42,7 +42,7 @@
     "eslint-plugin-ava": "^14.0.0",
     "rollup": "^4.9.6",
     "tslib": "^2.6.0",
-    "tsx": "^4.7.0",
+    "tsx": "^4.7.1",
     "typescript": "^5.3.3",
     "unified-lint-rule": "^2.1.2"
   },
@@ -54,7 +54,7 @@
     "rollup": "^4.9.6",
     "to-vfile": "^8.0.0",
     "tslib": "^2.6.0",
-    "tsx": "^3.12.7",
+    "tsx": "^4.7.1",
     "typescript": "^5.1.6",
     "unified-lint-rule": "^2.1.2",
     "unist-util-is": "^6.0.0",
