@@ -37,7 +37,7 @@
     "@types/mdast": "^4.0.3",
     "@types/node": "^20.11.19",
     "@types/unist": "^3.0.2",
-    "ava": "^6.1.1",
+    "ava": "^6.1.2",
     "eslint": "^8.57.0",
     "eslint-plugin-ava": "^14.0.0",
     "rollup": "^4.12.0",
