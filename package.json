@@ -47,7 +47,7 @@
     "unified-lint-rule": "^2.1.2"
   },
   "dependencies": {
-    "eslint-plugin-yml": "^1.12.2",
+    "eslint-plugin-yml": "^1.13.2",
     "remark-frontmatter": "^5.0.0",
     "remark-lint": "^9.1.2",
     "remark": "^15.0.1",
