@@ -8,8 +8,8 @@ import remarkFrontmatter from 'remark-frontmatter'
 
 import frontmatterLinter from './index'
 
-const oneFrontmatterBlockPresent = read('./tests/fixtures/one-frontmatter-block-present.md')
-const noFrontmatterBlockPresent = read('./tests/fixtures/no-frontmatter-blocks-present.md')
+const oneFrontmatterBlockPresent = read('./test-fixtures/one-frontmatter-block-present.md')
+const noFrontmatterBlockPresent = read('./test-fixtures/no-frontmatter-blocks-present.md')
 
 test('that plugin can be set up without options', t => {
 	t.plan(1)
@@ -76,7 +76,7 @@ test("that error messages are returned when given incorrectly formatted frontmat
     .use(remarkLint)
     .use(remarkFrontmatter)
     .use(frontmatterLinter)
-    .process(await read('./tests/fixtures/one-frontmatter-block-present-with-errors.md'))
+    .process(await read('./test-fixtures/one-frontmatter-block-present-with-errors.md'))
 
   const report = reporter(test)
 
