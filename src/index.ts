@@ -5,15 +5,13 @@ import * as utils from './utils/index'
 import type { Msg } from './utils/get-error-messages'
 
 import type { Linter } from 'eslint'
-import type { Root, YAML } from 'mdast'
+import type { Root, Yaml } from 'mdast'
 import type { VFile } from 'unified-lint-rule/lib'
 
 interface Settings {
   rules?: Partial<Linter.RulesRecord>,
   extends?: string | string[],
 }
-
-const NAME: string = 'frontmatter-linter'
 
 const frontmatterLinter = (settings: Settings = {}) => {
   return async (tree: Root, vFile: VFile): Promise<void> => {
@@ -33,16 +31,7 @@ const frontmatterLinter = (settings: Settings = {}) => {
     })
 
     const filePath: string = utils.getFilePath(vFile)
-
-    const yamlBlocks: YAML[] = utils.filterInYAMLBlocks(tree)
-
-    if (yamlBlocks.length > 1) {
-      vFile.fail(
-        `More than one block of YAML - expected 1, received ${yamlBlocks.length}`,
-        { line: 1, column: 1 },
-        NAME,
-      )
-    }
+    const yamlBlocks: Yaml[] = utils.filterInYAMLBlocks(tree)
 
     if (yamlBlocks.length === 1) {
       const results: ESLint.LintResult[] = await eslint.lintText(
