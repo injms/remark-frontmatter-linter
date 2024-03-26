@@ -8,9 +8,9 @@ import type { Linter } from 'eslint'
 import type { Root, Yaml } from 'mdast'
 import type { VFile } from 'unified-lint-rule/lib'
 
-interface Settings {
-  rules?: Partial<Linter.RulesRecord>,
-  extends?: string | string[],
+type Settings = {
+  rules?: Linter.RulesRecord;
+  extends?: string | string[];
 }
 
 const frontmatterLinter = (settings: Settings = {}) => {

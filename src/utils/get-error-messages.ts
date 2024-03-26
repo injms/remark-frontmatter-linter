@@ -3,10 +3,10 @@ import type { Position } from 'unist'
 
 const NAME: string = 'frontmatter-linter'
 
-export interface Msg {
-  message: string,
-  nameAndRule: string,
-  position: Position,
+export type Msg = {
+  message: string;
+  nameAndRule: string;
+  position: Position;
 }
 
 const getErrorMessages = (results: ESLint.LintResult[]): Msg[] => {
