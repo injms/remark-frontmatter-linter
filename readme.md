@@ -19,7 +19,7 @@ npm install @injms/remark-frontmatter-linter
 
 ## ⌨️ Set up for [`remark-cli`][remark-cli]
 
-Add the plugin in the list of plugins, [whereever that is being set][example-config-files], remembering to add it **after** the `remark-lint` and `remark-frontmatter` plugins.
+Add the plugin in the list of plugins, [where ever that is being set][example-config-files], remembering to add it **after** the `remark-lint` and `remark-frontmatter` plugins.
 
 ```javascript
 // .remarkrc.mjs
@@ -79,6 +79,6 @@ This plugin uses the [AVA test runner][ava].
 [remark-frontmatter]: https://github.com/remarkjs/remark-frontmatter
 [remark-cli]: https://github.com/remarkjs/remark/tree/main/packages/remark-cli
 [standard-yml-rules]: https://ota-meshi.github.io/eslint-plugin-yml/rules/
-[example-config-files]: https://github.com/remarkjs/remark/tree/main/packages/remark-cli#example-config-files-json-yaml-js
+[example-config-files]: https://github.com/remarkjs/remark/tree/618a9ad1d44aa106bd2a8c61ebf8589cfe97fa16/packages/remark-cli#example-config-files-json-yaml-js
 [ava]: https://github.com/avajs/ava
 [eslint-plugin-yml-config-docs]: https://ota-meshi.github.io/eslint-plugin-yml/user-guide/#usage
