@@ -11,6 +11,7 @@
     "clean": "rm -r dist",
     "lint": "eslint",
     "test": "NODE_OPTIONS='--import=tsx' c8 ava",
+    "type-check": "tsc",
     "watch": "rollup --config rollup.config.js --watch --watch.onBundleStart='npm run clean'"
   },
   "keywords": [
