@@ -1,6 +1,6 @@
 import { ESLint } from 'eslint'
 
-import * as utils from './utils/index'
+import * as utils from './utils'
 
 import type { Msg } from './utils/get-error-messages'
 
