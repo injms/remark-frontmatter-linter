@@ -9,8 +9,10 @@ Requirements:
 
 ## 🏗️ Installation
 
+Install this package -  `@injms/remark-frontmatter-linter` - and its dependencies - `remark-lint` and `remark-frontmatter` - with npm:
+
 ```bash
-npm install @injms/remark-frontmatter-linter
+npm install remark-lint remark-frontmatter @injms/remark-frontmatter-linter
 ```
 
 <!-- ## 🛠️ Set up -->
