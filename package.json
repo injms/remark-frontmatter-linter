@@ -1,5 +1,5 @@
 {
-  "name": "remark-frontmatter-linter",
+  "name": "@injms/remark-frontmatter-linter",
   "version": "0.8.5",
   "description": "A linter for YAML frontmatter",
   "type": "module",
