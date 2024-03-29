@@ -1,0 +1,28 @@
+name: "Bump version on dependency update"
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo ${{ github.actor }}
+      - run: echo ${{ github.base_ref }}
+      - run: echo ${{ github.ref }}
+      - run: echo ${{ github.event.pull_request }}
+      - run: echo ${{ github.event.pull_request.merged }}
+      - run: echo ${{ github.repository_owner }}
+  bump-version:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true && github.repository_owner == 'injms' && startsWith('dependabot/', github.ref) && (github.actor == 'injms' || github.actor == 'mergify[bot]')
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: npm
+      - run: git fetch --tags
+      - run: npm version patch -m "v%s"
+      - run: git push && git push --tags
