@@ -15,7 +15,7 @@
     "release:github": "npm publish --scope=@injms --registry=https://npm.pkg.github.com",
     "release:npm": "np",
     "test": "NODE_OPTIONS='--import=tsx' c8 ava",
-    "type-check": "tsc",
+    "type-check": "tsc --noEmit",
     "watch": "rollup --config rollup.config.js --watch --watch.onBundleStart='npm run clean'"
   },
   "keywords": [
