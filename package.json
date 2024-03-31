@@ -1,6 +1,6 @@
 {
   "name": "@injms/remark-frontmatter-linter",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "description": "A linter for YAML frontmatter",
   "type": "module",
   "main": "./dist/index.js",
