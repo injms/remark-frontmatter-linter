@@ -13,7 +13,7 @@
     "clean": "rm -r dist",
     "lint": "eslint",
     "release:github": "npm publish --scope=@injms --registry=https://npm.pkg.github.com",
-    "release:npm": "np",
+    "release:npm": "np --message='🚦 Version %s'",
     "test": "NODE_OPTIONS='--import=tsx' c8 ava",
     "type-check": "tsc --noEmit",
     "watch": "rollup --config rollup.config.js --watch --watch.onBundleStart='npm run clean'"
