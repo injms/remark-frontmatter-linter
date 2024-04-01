@@ -15,9 +15,10 @@ const getErrorMessages = (results: ESLint.LintResult[]): Msg[] => {
       const ruleId: string = message.ruleId ?? 'unknown'
       const messageText: string = message.message ?? 'unknown'
 
-      // NOTE: because the markdown file has a frontmatter section, the line
-      // number is off by one. So we add one to the line number to make the
-      // position correct.
+      // NOTE: The line number we need to report needs 1 added to it -  this is
+      // because the markdown file has a line of dashes (or pluses, or something
+      // else) to indicate the start of the frontmatter section before the
+      // actual YAML starts.
       const position: Position = {
         start: {
           line: message.line + 1 ?? 1,
