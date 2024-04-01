@@ -305,7 +305,7 @@ and_a_list:
   - listed
 and_a_object:
   thing: other
-  other_thing: Somethinge else
+  other_thing: Something else
 longer_text: |
   That can be spread over
   multiple lines
@@ -624,7 +624,7 @@ and_a_list:
   - listed
 and_a_object:
   thing: other
-  other_thing: Somethinge else
+  other_thing: Something else
 longer_text: |
   That can be spread over
   multiple lines
