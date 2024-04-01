@@ -1,7 +1,7 @@
 import type { Root, Yaml } from 'mdast'
 import { is } from 'unist-util-is'
 
-const filterInYAMLBloks = (tree: Root) => {
+const filterInYAMLBloks = (tree: Root): Yaml[] => {
   const yamlNodes: Yaml[] = []
 
   tree.children.forEach((node) => {
