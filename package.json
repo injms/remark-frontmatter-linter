@@ -48,7 +48,7 @@
     "np": "^10.0.2",
     "remark": "^15.0.1",
     "remark-frontmatter": "^5.0.0",
-    "remark-lint": "^9.1.2",
+    "remark-lint": "^10.0.0",
     "rollup": "^4.13.2",
     "to-vfile": "^8.0.0",
     "tslib": "^2.6.0",
