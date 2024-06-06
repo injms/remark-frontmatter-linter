@@ -58,7 +58,7 @@
     "vfile-reporter": "^8.1.0"
   },
   "dependencies": {
-    "eslint": "^8.57.0",
+    "eslint": "^9.4.0",
     "eslint-plugin-yml": "^1.12.2",
     "unist-util-is": "^6.0.0"
   },
