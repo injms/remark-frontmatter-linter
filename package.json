@@ -38,7 +38,7 @@
   "devDependencies": {
     "@ava/typescript": "^5.0.0",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/eslint": "^8.56.5",
+    "@types/eslint": "^9.6.0",
     "@types/mdast": "^4.0.3",
     "@types/node": "^22.1.0",
     "@types/unist": "^3.0.2",
@@ -58,7 +58,7 @@
     "vfile-reporter": "^8.1.0"
   },
   "dependencies": {
-    "eslint": "^8.57.0",
+    "eslint": "^9.8.0",
     "eslint-plugin-yml": "^1.12.2",
     "unist-util-is": "^6.0.0"
   },
